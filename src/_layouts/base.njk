@@ -4,10 +4,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content="{{ eleventy.generator }}" />
-    <title>11ty Demo</title>
+    <title>{{ name }} | 11ty Demo</title>
   </head>
   <body>
-    <h1>11ty Demo</h1>
-    <p>Hello world!</p>
+    <h1>{{ name }}</h1>
+    {{ content | safe }}
   </body>
 </html>
