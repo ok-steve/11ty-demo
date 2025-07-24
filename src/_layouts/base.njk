@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content="{{ eleventy.generator }}" />
-    <title>{{ name }} | 11ty Demo</title>
+    {% include "head.njk" %}
   </head>
   <body>
-    <h1>{{ name }}</h1>
-    {{ content | safe }}
+    {% include "header.njk" %}
+
+    <main role="main">
+      <h1>{{ name }}</h1>
+      {{ content | safe }}
+    </main>
+
+    {% include "footer.njk" %}
   </body>
 </html>
