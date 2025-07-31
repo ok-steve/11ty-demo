@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/ok-steve/11ty-demo#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^3.1.2"
+    "@11ty/eleventy": "^3.1.2",
+    "@11ty/eleventy-navigation": "^1.0.4"
   }
 }
