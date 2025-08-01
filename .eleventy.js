@@ -1,3 +1,4 @@
+import { EleventyHtmlBasePlugin } from "@11ty/eleventy";
 import EleventyNavigationPlugin from "@11ty/eleventy-navigation";
 import { feedPlugin } from "@11ty/eleventy-plugin-rss";
 import pkg from "./package.json" with { type: "json" };
@@ -5,6 +6,7 @@ import pkg from "./package.json" with { type: "json" };
 import collections from "./lib/collections/index.js";
 
 export default async function (eleventyConfig) {
+  eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
   eleventyConfig.addPlugin(EleventyNavigationPlugin);
 
   eleventyConfig.addPlugin(feedPlugin, {
