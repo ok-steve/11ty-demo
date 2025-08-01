@@ -1,0 +1,26 @@
+content:
+  - name: post
+    label: Posts
+    path: src/posts
+    filename: "{fields.name}.md"
+    type: collection
+    view:
+      fields: [name, date]
+      primary: name
+      sort: [date, name]
+    fields:
+      - name: name
+        label: Title
+        type: string
+        required: true
+      - name: description
+        label: Description
+        type: string
+        required: true
+      - name: date
+        label: Created
+        type: date
+        required: true
+      - name: body
+        label: Body
+        type: rich-text
